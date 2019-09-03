@@ -4,6 +4,7 @@
   "description": "Generates static websites using Netlify CMS and 11ty",
   "main": "index.js",
   "scripts": {
+    "build": "npx @11ty/eleventy --input=site",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,5 +22,11 @@
   "bugs": {
     "url": "https://github.com/greyskullrocks/ice-pail-experiment/issues"
   },
-  "homepage": "https://github.com/greyskullrocks/ice-pail-experiment#readme"
+  "homepage": "https://github.com/greyskullrocks/ice-pail-experiment#readme",
+  "dependencies": {
+    "netlify-cms": "^2.9.7"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.9.0"
+  }
 }
