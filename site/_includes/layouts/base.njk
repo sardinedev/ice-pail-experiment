@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Blog Name</title>
-    <meta name="Description" content="This is a static website">
-    <link rel="stylesheet" href="/css/style.css">
+    <title>{{ renderData.title or title or metadata.title }}</title>
+    <meta name="Description" content="{{ renderData.description or description or metadata.description }}">
+    <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
   </head>
   <body>
     <header></header>
 
-    <main>
+    <main{% if templateclass %} class="{{ templateClass }}" {% endif %}>
       <div class="warning">
         <ol>
           <li>Edit the
@@ -32,11 +32,11 @@
         </p>
       </div>
 
-      
+      {{ content | safe }}
     </main>
 
     <footer></footer>
 
-    <!-- Current page: / -->
+    <!-- Current page: {{ page.url | url }} -->
   </body>
 </html>
