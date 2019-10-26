@@ -1,0 +1,14 @@
+{% set css %}{% include "./header.css" ignore missing %}{% endset %}
+<style>
+  {{ css | safe }}
+</style>
+
+<header>
+  <h2><a href="{{ '/' | url }}">{{ metadata.title }}</a></h2>
+  <nav>
+    <ul>
+      <li>Blog</li>
+      <li>About</li>
+    </ul>
+  </nav>
+</header>
