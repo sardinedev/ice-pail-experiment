@@ -1,5 +1,6 @@
-{% set css %}{% include "./footer.css" %}{% endset %}
-<style>{{ css | safe }}</style>
+<style>
+  {{ "site/_includes/components/footer/footer.scss" | sass | safe }}
+</style>
 <footer class="footer">
   <small>
     The foot is present in all pages.

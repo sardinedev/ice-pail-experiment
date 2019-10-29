@@ -1,6 +1,5 @@
-{% set css %}{% include "./header.css" ignore missing %}{% endset %}
 <style>
-  {{ css | safe }}
+  {{ "site/_includes/components/header/header.scss" | sass | safe }}
 </style>
 
 <header>

@@ -1,10 +1,12 @@
 import babel from 'rollup-plugin-babel';
 import resolve from 'rollup-plugin-node-resolve';
 import { terser } from 'rollup-plugin-terser';
+import sassBuild from './lib/sass.rollup';
 
 const extensions = ['.js', '.ts'];
 
 export default async function({ watch }) {
+  await sassBuild();
   return {
     input: 'src/lazy-picture.ts',
     output: {
