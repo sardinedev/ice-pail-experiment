@@ -11,3 +11,10 @@ I like
 * Chocolate Cookies
 * Butter Cookies
 * All the Cookies
+
+
+```javascript
+function sum(a,b) {
+  return a + b;
+}
+```
