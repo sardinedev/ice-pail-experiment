@@ -1,16 +1,14 @@
 import babel from 'rollup-plugin-babel';
 import resolve from 'rollup-plugin-node-resolve';
 import { terser } from 'rollup-plugin-terser';
-import sassBuild from './lib/sass.rollup';
 
 const extensions = ['.js', '.ts'];
 
-export default async function({ watch }) {
-  await sassBuild();
+export default function({ watch }) {
   return {
-    input: 'src/lazy-picture.ts',
+    input: 'site/_scripts/main.ts',
     output: {
-      file: 'lib/lazy-picture-esm.js',
+      file: '_site/js/main.js',
       format: 'esm',
       assetFileNames: '[name]-[hash][extname]'
     },
@@ -18,7 +16,7 @@ export default async function({ watch }) {
       clearScreen: false,
       // Avoid watching intermediate files, else watch gets stuck in a loop.
       // 11ty source files are watched by eleventyPlugin.
-      exclude: '.build-tmp/**/*.html'
+      exclude: '_site/**/*.html'
     },
     plugins: [
       resolve({ extensions }),
