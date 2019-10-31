@@ -1,7 +1,13 @@
+{% set search_icon %}
+{% include "site/_assets/icons/search.svg" %}
+{% endset %}
+
 <style>
-  {{ "site/_includes/components/search/search.scss" | sass | safe }}
+  {{"site/_includes/components/search/search.scss" | sass | safe}}
 </style>
 
-<script async src="{{ '/js/search.js' | url }}"></script>
+<figure class="search">
+  {{search_icon | safe}}
+</figure>
 
-<div></div>
+{# <script async="async" src="{{ '/assets/scripts/search.js' | url }}"></script> #}

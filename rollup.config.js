@@ -6,9 +6,9 @@ const extensions = ['.js', '.ts'];
 
 export default function({ watch }) {
   return {
-    input: 'site/_scripts/main.ts',
+    input: 'site/_assets/scripts/main.ts',
     output: {
-      file: '_site/js/main.js',
+      file: '_site/assets/scripts/main.js',
       format: 'esm',
       assetFileNames: '[name]-[hash][extname]'
     },

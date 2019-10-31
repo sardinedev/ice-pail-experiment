@@ -1,13 +1,16 @@
 <style>
-  {{ "site/_includes/components/header/header.scss" | sass | safe }}
+  {{"site/_includes/components/header/header.scss" | sass | safe}}
 </style>
 
 <header>
-  <h2><a href="{{ '/' | url }}">{{ metadata.title }}</a></h2>
+  <h2>
+    <a href="{{ '/' | url }}">{{ metadata.title }}</a>
+  </h2>
   <nav>
     <ul>
       <li>Blog</li>
       <li>About</li>
+      <li>{% include "./../search/search.njk" %}</li>
     </ul>
   </nav>
 </header>

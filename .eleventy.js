@@ -6,10 +6,8 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addFilter('sass', sassBuild);
 
-  // The following copies to `_site/img`
-  eleventyConfig.addPassthroughCopy('site/img');
-  eleventyConfig.addPassthroughCopy('site/css');
-  eleventyConfig.addPassthroughCopy('site/js');
+  // The following copies to `_site/assets`
+  eleventyConfig.addPassthroughCopy('site/assets');
 
   eleventyConfig.addPassthroughCopy('admin');
 };
