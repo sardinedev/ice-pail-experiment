@@ -1,5 +1,11 @@
-@import './../../../_assets/styles/styles';
+@import './../../../_assets/styles/utilities';
 
 .header {
-  color: burlywood;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  ul {
+    display: flex;
+    align-items: center;
+  }
 }
