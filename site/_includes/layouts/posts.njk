@@ -1,0 +1,16 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-posts
+title: Blog posts on The Ice Pail Experiment
+description: A collection of posts about almost everything
+---
+
+{% block content %}
+  {%- for item in collections.posts  -%}
+  {% if loop.index < 4 %}
+  {% include 'post-teaser.njk' %}
+  {% else %}
+  {% include 'post-teaser-condensed.njk' %}
+  {% endif %}
+  {%- endfor -%}
+{% endblock %}
