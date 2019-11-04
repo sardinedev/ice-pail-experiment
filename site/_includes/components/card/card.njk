@@ -1,0 +1,16 @@
+<style>
+  {{"site/_includes/components/card/card.scss" | sass | safe}}
+</style>
+
+<article>
+    <header>
+        <h5>{{post.data.title}}</h5>
+        {% if post.data.thumbnail %}
+        <img async src="{{post.data.thumbnail | url}}">
+        {% endif %}
+    </header>
+    <p>{{post.data.summary}}</p>
+    <footer>
+        <p>Posted on <time datetime="{{post.data.date}}">{{post.data.date | date}}</time></p>
+    </footer>
+</article>
