@@ -2,7 +2,7 @@
   {{"site/_includes/components/card/card.scss" | sass | safe}}
 </style>
 
-<article>
+<article class="postcard">
     <header>
         <h5>{{post.data.title}}</h5>
         {% if post.data.thumbnail %}
@@ -12,5 +12,6 @@
     <p>{{post.data.summary}}</p>
     <footer>
         <p>Posted on <time datetime="{{post.data.date}}">{{post.data.date | date}}</time></p>
+        <a href="{{post.url}}">Read more</a>
     </footer>
 </article>
