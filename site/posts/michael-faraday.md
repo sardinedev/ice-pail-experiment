@@ -8,7 +8,6 @@ summary: >-
   principles underlying electromagnetic induction, diamagnetism and
   electrolysis.
 
-
   Although Faraday received little formal education, he was one of the most
   influential scientists in history. It was by his research on the magnetic
   field around a conductor carrying a direct current that Faraday established
@@ -22,6 +21,7 @@ summary: >-
 tags:
   - post
 ---
+
 ## Scientific achievements
 
 **Electricity and magnetism**
@@ -30,7 +30,7 @@ Faraday is best known for his work regarding electricity and magnetism. His firs
 
 In 1821, soon after the Danish physicist and chemist Hans Christian Ørsted discovered the phenomenon of electromagnetism, Davy and British scientist William Hyde Wollaston tried, but failed, to design an electric motor.\[2] Faraday, having discussed the problem with the two men, went on to build two devices to produce what he called "electromagnetic rotation". One of these, now known as the homopolar motor, caused a continuous circular motion that was engendered by the circular magnetic force around a wire that extended into a pool of mercury wherein was placed a magnet; the wire would then rotate around the magnet if supplied with current from a chemical battery. These experiments and inventions formed the foundation of modern electromagnetic technology. In his excitement, Faraday published results without acknowledging his work with either Wollaston or Davy. The resulting controversy within the Royal Society strained his mentor relationship with Davy and may well have contributed to Faraday's assignment to other activities, which consequently prevented his involvement in electromagnetic research for several years.\[40]\[41]
 
-One of Faraday's 1831 experiments demonstrating induction. The liquid battery (right) sends an electric current through the small coil (A). When it is moved in or out of the large coil (B), its magnetic field induces a momentary voltage in the coil, which is detected by the galvanometer (G).
+One of Faraday's 1831 experiments demonstrating induction. The liquid battery (right) sends an electric current through the small coil (A). When it is moved in or out of the large coil (B), its magnetic field induces a momentary voltage in the coil, which is detected by the galvanometer (G).
 
 From his initial discovery in 1821, Faraday continued his laboratory work, exploring electromagnetic properties of materials and developing requisite experience. In 1824, Faraday briefly set up a circuit to study whether a magnetic field could regulate the flow of a current in an adjacent wire, but he found no such relationship. This experiment followed similar work conducted with light and magnets three years earlier that yielded identical results.\[43]\[44] During the next seven years, Faraday spent much of his time perfecting his recipe for optical quality (heavy) glass, borosilicate of lead,\[45] which he used in his future studies connecting light with magnetism.\[46] In his spare time, Faraday continued publishing his experimental work on optics and electromagnetism; he conducted correspondence with scientists whom he had met on his journeys across Europe with Davy, and who were also working on electromagnetism.\[47] Two years after the death of Davy, in 1831, he began his great series of experiments in which he discovered electromagnetic induction, recording in his laboratory diary on 28 October 1831 he was; "making many experiments with the great magnet of the Royal Society".\[48]
 

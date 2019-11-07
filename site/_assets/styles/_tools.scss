@@ -4,4 +4,15 @@
     max-width: 1280px;
     width: 100%;
   }
+  &article {
+    width: 730px;
+    font-size: 1.125rem;
+    p {
+      line-height: calc(1.5em + 0.2vw);
+    }
+    time {
+      color: lighten($body-color, 50%);
+      font-size: 0.75em;
+    }
+  }
 }
