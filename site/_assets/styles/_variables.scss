@@ -96,7 +96,7 @@ $paragraph-margin-bottom: 1rem !default;
  * Style anchor elements.
  */
 
-$link-color: #aec6cf !default;
+$link-color: #2f527b !default;
 $link-decoration: none !default;
 $link-hover-color: darken($link-color, 15%) !default;
-$link-hover-decoration: underline !default;
+$link-hover-decoration: underline double !default;

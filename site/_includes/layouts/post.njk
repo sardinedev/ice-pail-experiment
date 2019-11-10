@@ -2,12 +2,16 @@
 layout: layouts/base.njk
 templateClass: tmpl-post
 ---
-<article class="tipe-article">
+
+<style>
+  {{"site/_includes/layouts/post.scss" | sass | safe}}
+</style>
+<article class="article">
   <header>
     <time datetime="{{date}}">{{date | date}}</time>
     <h1>{{title}}</h1>
     {% if thumbnail %}
-      <img class="tipe-article__hero" async src="{{thumbnail | url}}">
+      <img class="article__hero" async src="{{thumbnail | url}}">
     {% endif %}
   </header>
 {{ content | safe }}
