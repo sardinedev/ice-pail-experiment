@@ -3,18 +3,3 @@
 // Overrides
 $body-bg: #fafcfd;
 $body-color: #333;
-
-// Global styles
-@import 'reset';
-
-@import 'tools';
-
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-main {
-  flex-grow: 1;
-}

@@ -6,7 +6,7 @@ content: true
   {{"site/posts.scss" | sass | safe}}
 </style>
 <h2>All my Posts!</h2>
-<section class="allposts">
+<section class="container mx-auto max-w-xl min-h-screen">
 {%- for post in collections.post -%}
   {% include "components/card/card.njk" %}
 {%- endfor -%}

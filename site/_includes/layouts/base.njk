@@ -7,7 +7,7 @@
 	<body>
 		{% include "components/header/header.njk" %}
 		
-		<main {% if content %} class="hey"{% endif %}>
+		<main>
 			{{ layoutContent | safe }}
 		</main>
 
