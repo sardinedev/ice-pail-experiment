@@ -1,14 +1,6 @@
 @import './../../../_assets/styles/utilities';
 
 .header {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  padding: 1em;
-  ul {
-    display: flex;
-    align-items: center;
-  }
   li {
     margin: 0 10px;
     &:first-child {
