@@ -1,3 +1,7 @@
+{% set menu_icon %}
+{% include "site/_assets/icons/menu.svg" %}
+{% endset %}
+
 <style>
   {{"site/_includes/components/header/header.scss" | sass | safe}}
 </style>
@@ -6,11 +10,13 @@
   <h3>
     <a href="{{ '/' | url }}">{{ metadata.title }}</a>
   </h3>
-  <nav>
-    <ul class="flex items-center">
+  <nav id="header-nav">
+    <ul class="hidden lg:flex items-center">
       <li><a href="{{ '/posts' | url }}">Blog</a></li>
       <li><a href="{{ '/about' | url }}">About</a></li>
-      <li>{% include "./../search/search.njk" %}</li>
     </ul>
+    <span id="menu-button" class="lg:hidden relative z-10">
+      {{menu_icon | safe}}
+    </span>
   </nav>
 </header>
