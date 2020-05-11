@@ -1,10 +1,14 @@
 {% set menu_icon %}
 {% include "site/_assets/icons/menu.svg" %}
 {% endset %}
+{% set close_icon %}
+{% include "site/_assets/icons/close.svg" %}
+{% endset %}
 
 <style>
   {{"site/_includes/components/header/header.scss" | sass | safe}}
 </style>
+
 
 <header class="header flex container mx-auto items-center justify-between p-4">
   <h3>
@@ -15,8 +19,13 @@
       <li><a href="{{ '/posts' | url }}">Blog</a></li>
       <li><a href="{{ '/about' | url }}">About</a></li>
     </ul>
-    <span id="menu-button" class="lg:hidden relative z-10">
+    <span id="menu-button" class="lg:hidden relative z-10 cursor-pointer">
       {{menu_icon | safe}}
+    </span>
+    <span id="close-button" class="lg:hidden opacity-0 relative z-10 cursor-pointer">
+      {{close_icon | safe}}
     </span>
   </nav>
 </header>
+
+<script defer src="{{ 'site/_includes/components/header/header.ts' | rollup | safe }}"></script>
