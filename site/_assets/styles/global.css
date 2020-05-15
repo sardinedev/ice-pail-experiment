@@ -10,3 +10,7 @@ body {
   background-color: var(--primary-color);
   color: var(--base-color);
 }
+
+a {
+  color: var(--accent-color);
+}
