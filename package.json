@@ -4,8 +4,9 @@
   "description": "Generates static websites using 11ty",
   "main": "index.js",
   "scripts": {
-    "build": "ELEVENTY_ENV=production npx @11ty/eleventy --input=site",
-    "start": "ELEVENTY_ENV=development npx @11ty/eleventy --input=site --serve",
+    "build": "npm run tailwind && ELEVENTY_ENV=production npx @11ty/eleventy --input=site",
+    "start": "npm run tailwind && ELEVENTY_ENV=development npx @11ty/eleventy --input=site --serve",
+    "tailwind": "npx tailwindcss -i ./site/_assets/styles/tailwind.css -o ./_site/assets/styles/tailwind.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

@@ -27,7 +27,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
 
   if (process.env.ELEVENTY_ENV === "production") {
-    eleventyConfig.addPlugin(tinyHTML);
     eleventyConfig.addPlugin(safeLinks);
     eleventyConfig.addPlugin(tinyCSS, {
       purgeCSS: {
@@ -40,5 +39,6 @@ module.exports = function (eleventyConfig) {
         ]
       }
     });
+    eleventyConfig.addPlugin(tinyHTML);
   }
 };
