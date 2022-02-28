@@ -5,10 +5,6 @@
 {% include "site/_assets/icons/close.svg" %}
 {% endset %}
 
-<style>
-  {{"site/_includes/components/header/header.scss" | sass | safe}}
-</style>
-
 
 <header class="header flex container mx-auto justify-between p-4">
   <h3>
@@ -27,5 +23,3 @@
     </span>
   </nav>
 </header>
-
-<script defer src="{{ 'site/_includes/components/header/header.ts' | rollup | safe }}"></script>
